@@ -1,0 +1,295 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Formulario de Registro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .footer-text {
+            font-size: 0.75rem;
+        }
+
+        footer .container {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        footer .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer .social-links a {
+            margin-right: 10px;
+        }
+
+        .background-image {
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        .form-container {
+            position: relative;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 1;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .btn-primary {
+            background-color: #FFC451;
+            border-color: #FFC451;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffb04b;
+        }
+
+        .text-center a {
+            color: #FFC451;
+            text-decoration: none;
+        }
+
+        .text-center a:hover {
+            text-decoration: underline;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #333;
+        }
+
+        .header-links {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+
+        .header-container .col-auto {
+            margin-left: 15px;
+        }
+
+        .login-links a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFC451;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+            flex-grow: 1;
+        }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+
+        .login-links .create-account a {
+            background-color: #555;
+        }
+
+        .login-links .login a {
+            background-color: #FFC451;
+        }
+
+        .login-links .login a:hover {
+            background-color: #ffb04b;
+        }
+    </style>
+</head>
+<body>
+
+<header class="container-fluid py-2 bg-dark text-white">
+    <div class="header-container">
+        <div class="col-auto">
+            <h2 class="mb-0 text-white">FC</h2>
+        </div>
+        <div class="header-links">
+            <h3 class="text-white mb-0">Formulario de Registro</h3>
+        </div>
+        <div class="col-auto">
+            <a href="#" class="btn btn-primary">Iniciar sesión</a>
+        </div>
+    </div>
+</header>
+
+<div class="background-image"></div>
+
+<div class="form-container" id="firstFormContainer">
+    <h2>Completa los siguientes campos</h2>
+    <form id="firstRegistrationForm" action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Nombre(s)</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Apellido Paterno</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="motherLastName">Apellido Materno</label>
+            <input type="text" id="motherLastName" name="motherLastName" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Dirección (Calle y Número)</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="neighborhood">Colonia</label>
+            <input type="text" id="neighborhood" name="neighborhood" required>
+        </div>
+        <div class="form-group">
+            <label for="municipality">Municipio</label>
+            <input type="text" id="municipality" name="municipality" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary w-100">Registrar</button>
+        </div>
+    </form>
+    <div class="text-center">
+        <p><a href="#">Recuperar cuenta</a></p>
+    </div>
+</div>
+
+<div class="form-container" id="secondFormContainer" style="display: none;">
+    <h2>Formulario de Datos Clínicos</h2>
+    <form id="secondRegistrationForm" action="#" method="POST">
+        <div class="form-group">
+            <label for="bloodType">Tipo de Sangre</label>
+            <select id="bloodType" name="bloodType" class="form-control" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="chronicDisease">¿Padeces alguna enfermedad crónico-degenerativa?</label>
+            <input type="text" id="chronicDisease" name="chronicDisease">
+        </div>
+        <div class="form-group">
+            <label for="treatment">¿Cuál es tu tratamiento?</label>
+            <input type="text" id="treatment" name="treatment">
+        </div>
+        <div class="form-group">
+            <label for="organDonation">¿Eres donador de órganos?</label>
+            <select id="organDonation" name="organDonation" class="form-control">
+                <option value="yes">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="donorID">ID de Donador de Órganos</label>
+            <input type="text" id="donorID" name="donorID">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary w-100">Enviar Datos</button>
+        </div>
+    </form>
+</div>
+
+<footer class="container-fluid bg-dark text-white py-4">
+    <div class="row">
+        <div class="col-md-6 footer-text">
+            <h5>GP</h5>
+            <p>A108 Adam Street, New York, NY 535022</p>
+            <p>Phone: +1 5589 55488 55</p>
+            <p>Email: info@example.com</p>
+        </div>
+
+        <div class="col-md-6 texto-pie">
+            <h5>Enlaces útiles</h5>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-opacity-75">Inicio</a></li>
+                <li><a href="#" class="text-white text-opacity-75">Sobre nosotros</a></li>
+                <li><a href="#" class="text-white text-opacity-75">Servicios</a></li>
+                <li><a href="#" class="text-white text-opacity-75">Términos del servicio</a></li>
+                <li><a href="#" class="text-white text-opacity-75">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('firstRegistrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        document.getElementById('firstFormContainer').style.display = 'none';
+        document.getElementById('secondFormContainer').style.display = 'block';
+    });
+
+    document.getElementById('secondRegistrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        alert('Registro exitoso');
+    });
+</script>
+
+</body>
+</html>
