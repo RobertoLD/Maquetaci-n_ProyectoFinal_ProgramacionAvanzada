@@ -47,14 +47,15 @@
         }
 
         .imagen-fondo {
-            position: fixed;
+            background-image: url('motoclub1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://via.placeholder.com/1920x1080');
-            background-size: cover;
-            background-position: center;
             z-index: -1;
         }
 
@@ -83,12 +84,26 @@
             color: #555;
         }
 
+        .services-title {
+    margin-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+}
+
+
         .content {
             flex: 1;
         }
 
-        footer {
-            flex-shrink: 0;
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 15px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
