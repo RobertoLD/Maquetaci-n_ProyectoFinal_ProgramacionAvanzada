@@ -161,6 +161,77 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="grupoId" class="form-label">ID de Grupo</label>
+                            <input type="text" class="form-control" id="grupoId" placeholder="Ingrese el ID del grupo">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar al Grupo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalContactoLabel">Agregar Contacto de Emergencia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="usuarioId" class="form-label">ID de Usuario</label>
+                            <input type="text" class="form-control" id="usuarioId" placeholder="Ingrese el ID del usuario">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar Contacto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEventos" tabindex="-1" aria-labelledby="modalEventosLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEventosLabel">Agregar Evento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="eventoId" class="form-label">ID del Evento</label>
+                            <input type="text" class="form-control" id="eventoId" placeholder="Ingrese el ID del evento">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar Evento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRecuerdos" tabindex="-1" aria-labelledby="modalRecuerdosLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRecuerdosLabel">Agregar Recuerdo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="imagenRecuerdo" class="form-label">Subir Imagen</label>
+                            <input type="file" class="form-control" id="imagenRecuerdo" accept="image/*">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcionRecuerdo" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="descripcionRecuerdo" rows="3" placeholder="Ingrese una descripción"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar Recuerdo</button>
+                    </form>
                 </div>
             </div>
         </div>
