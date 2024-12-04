@@ -1,0 +1,108 @@
+import React from "react";
+import icon from "./icon.svg";
+import image11 from "./image-1-1.png";
+import image3 from "./image-3.png";
+import image from "./image.png";
+import ingresaTuApellidoMaterno from "./ingresa-tu-apellido-materno.png";
+import materialSymbolsArrowBack from "./material-symbols-arrow-back.svg";
+import "./style.css";
+
+export const RegistroPlantilla = () => {
+  return (
+    <div className="registro-plantilla">
+      <div className="div">
+        <div className="overlap">
+          <div className="rectangle" />
+
+          <img className="image" alt="Image" src={image11} />
+
+          <div className="rectangle-2" />
+
+          <div className="text-wrapper">Ingresa tu Nombre(s)</div>
+
+          <img
+            className="ingresa-tu-apellido"
+            alt="Ingresa tu apellido"
+            src={ingresaTuApellidoMaterno}
+          />
+
+          <p className="p">Ingresa tu dirección(calle y num)</p>
+
+          <div className="text-wrapper-2">Ingresa tu colonia</div>
+
+          <div className="text-wrapper-3">Ingresa tu municipio</div>
+
+          <div className="text-wrapper-4">Ingresa tu apellido Paterno</div>
+
+          <div className="rectangle-3" />
+
+          <p className="text-wrapper-5">Formulario de registro de usuario</p>
+
+          <div className="text-wrapper-6">Recuperar cuenta</div>
+
+          <div className="rectangle-4" />
+
+          <div className="text-wrapper-7">Registrar</div>
+
+          <div className="rectangle-5" />
+
+          <div className="rectangle-6" />
+
+          <div className="rectangle-7" />
+
+          <div className="rectangle-8" />
+
+          <div className="rectangle-9" />
+
+          <img
+            className="material-symbols"
+            alt="Material symbols"
+            src={materialSymbolsArrowBack}
+          />
+        </div>
+
+        <div className="text-wrapper-8">Ingresa tu municipio</div>
+
+        <header className="header">
+          <div className="container">
+            <div className="link">
+              <div className="overlap-group">
+                <div className="heading-GP">FC</div>
+
+                <div className="text-wrapper-9">.</div>
+              </div>
+            </div>
+
+            <div className="nav-list">
+              <div className="item-link-about">Consultas</div>
+
+              <div className="item-link-services">Servicios</div>
+
+              <div className="overlap-2">
+                <div className="item-link-services-2">Historia</div>
+
+                <div className="item-link">
+                  <div className="text-wrapper-10">Mas</div>
+
+                  <img className="icon" alt="Icon" src={icon} />
+                </div>
+              </div>
+
+              <div className="item-link-contact">Contáctanos</div>
+
+              <div className="item-link-about-2">Acerca de</div>
+            </div>
+
+            <div className="div-wrapper">
+              <div className="text-wrapper-11">Iniciar secion</div>
+            </div>
+          </div>
+
+          <img className="img" alt="Image" src={image} />
+        </header>
+
+        <img className="image-2" alt="Image" src={image3} />
+      </div>
+    </div>
+  );
+};

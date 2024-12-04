@@ -1,0 +1,359 @@
+.inicio-secion-plantilla,
+.inicio-secion-plantilla * {
+  box-sizing: border-box;
+}
+.inicio-secion-plantilla {
+  background: #ffffff;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-19 {
+  background: #ffffff;
+  width: 720px;
+  height: 955px;
+  position: absolute;
+  left: 0px;
+  top: 69px;
+}
+.image-1-1 {
+  width: 1440px;
+  height: 955px;
+  position: absolute;
+  left: 0px;
+  top: 69px;
+  object-fit: cover;
+}
+.ingresa-tu-municipio {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 259px;
+  top: 1035px;
+  width: 289px;
+  height: 28px;
+}
+.rectangle-37 {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 36px;
+  width: 612px;
+  height: 423px;
+  position: absolute;
+  left: 423px;
+  top: 168px;
+  backdrop-filter: blur(2px);
+}
+.correo {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 697px;
+  top: 239px;
+  width: 78px;
+  height: 23px;
+}
+.contrase-a {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 676px;
+  top: 346px;
+  width: 131px;
+  height: 23px;
+}
+.rectangle-26 {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 373px;
+  height: 55px;
+  position: absolute;
+  left: 551px;
+  top: 281px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.inicio-de-secion {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 129px);
+  top: calc(50% - 345px);
+  width: 302px;
+  height: 47px;
+}
+.recuperar-cuenta {
+  color: #6a65ff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  left: 645px;
+  top: 548px;
+}
+.rectangle-25 {
+  background: #00b2ff;
+  border-radius: 32.5px;
+  border-style: solid;
+  border-color: #00b2ff;
+  border-width: 3px;
+  width: 177px;
+  height: 52px;
+  position: absolute;
+  left: 640px;
+  top: 486px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.ingresar {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 688px;
+  top: 500px;
+}
+.rectangle-5 {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 373px;
+  height: 55px;
+  position: absolute;
+  left: 553px;
+  top: 385px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.material-symbols-arrow-back {
+  width: 70px;
+  height: 65px;
+  position: absolute;
+  left: 462px;
+  top: 185px;
+  overflow: visible;
+}
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  width: 1521.6px;
+  height: 80px;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
+}
+.container {
+  width: 1320px;
+  height: 60px;
+  position: absolute;
+  left: calc(50% - 655.8px);
+  top: calc(50% - 30px);
+}
+.link {
+  width: 51.56px;
+  height: 38.4px;
+  position: absolute;
+  left: 12px;
+  top: calc(50% - 19.2px);
+}
+.heading-1-gp {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 43.47px;
+  height: 38.4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div {
+  color: #ffc451;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 43.14px;
+  top: 3.2px;
+  width: 8.82px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-list {
+  height: 60px;
+  position: absolute;
+  right: 399.42px;
+  left: 288.2001953125px;
+  top: 0px;
+}
+.item-link {
+  height: 60px;
+  position: absolute;
+  right: 576.23px;
+  left: -21.5595703125px;
+  top: 0px;
+}
+.item-link-about {
+  color: rgba(255, 255, 255, 0.91);
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 153.44px;
+  top: 20px;
+  width: 88px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link-services {
+  color: rgba(255, 255, 255, 0.91);
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 279.44px;
+  top: 20px;
+  width: 74px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link-services2 {
+  color: rgba(255, 255, 255, 0.91);
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 391px;
+  top: 20px;
+  width: 74px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link2 {
+  height: 60px;
+  position: absolute;
+  right: 80.02px;
+  left: 422.6000061035156px;
+  top: 0px;
+}
+.mas {
+  color: rgba(255, 255, 255, 0.91);
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 64.84px;
+  top: 18px;
+  width: 36px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 102.76px;
+  top: 36px;
+  transform: translate(0px, -12px);
+  overflow: visible;
+}
+.item-link-contact {
+  color: rgba(255, 255, 255, 0.91);
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 567.44px;
+  top: 19px;
+  width: 110px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item-link-about2 {
+  color: rgba(255, 255, 255, 0.91);
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 27px;
+  top: 20px;
+  width: 88px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.crear-cuenta {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: absolute;
+  left: 1205px;
+  top: 22px;
+  width: 83px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.image-3 {
+  width: 65px;
+  height: 67px;
+  position: absolute;
+  left: 29px;
+  top: 7px;
+  object-fit: cover;
+}
+.image-32 {
+  width: 65px;
+  height: 67px;
+  position: sticky;
+  left: 29px;
+  top: 7px;
+  object-fit: cover;
+}
