@@ -19,7 +19,9 @@
         }
 
         .contenido {
-            flex: 1; /* Esto hace que el contenido ocupe todo el espacio disponible */
+            flex: 1;
+            min-height: calc(100vh - 100px);
+            padding-top: 50px;
         }
 
         .enlaces-header a {
@@ -53,8 +55,8 @@
             background-color: #343a40;
             color: white;
             text-align: center;
-            padding: 15px 0; /* Reducido el padding para hacer el footer más compacto */
-            margin-top: auto; /* Esto asegura que el footer se mantenga en la parte inferior */
+            padding: 15px 0;
+            margin-top: auto;
         }
 
         .texto-pie a {
@@ -67,17 +69,17 @@
         }
 
         .texto-pie h5 {
-            font-size: 1rem; /* Tamaño de fuente más pequeño */
+            font-size: 1rem;
         }
 
         .texto-pie p, .texto-pie ul {
-            font-size: 0.85rem; /* Reducir tamaño de texto en el footer */
+            font-size: 0.85rem;
         }
 
     </style>
 </head>
 <body>
-    <!-- Header -->
+
     <header class="container-fluid py-2 bg-dark text-white">
         <div class="contenedor-header">
             <div class="col-auto">
@@ -94,7 +96,6 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="contenido container py-5">
         <section class="text-center">
             <h2 class="fs-1">Acerca de</h2>
@@ -112,7 +113,6 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="container-fluid bg-dark text-white py-3">
         <div class="row">
             <div class="col-md-6 texto-pie">

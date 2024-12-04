@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>FreeChain - Página Localizar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenido {
+            flex: 1;
+            min-height: calc(100vh - 100px);
+            background-color: #ffffff;
+            padding-top: 50px;
+        }
+
+        .enlaces-header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .enlaces-header a:hover {
+            text-decoration: underline;
+        }
+
+        .contenedor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .texto-pie a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .texto-pie a:hover {
+            text-decoration: underline;
+        }
+
+        .texto-pie h5 {
+            font-size: 1rem;
+        }
+
+        .texto-pie p,
+        .texto-pie ul {
+            font-size: 0.85rem;
+        }
+
+        .card {
+            background-color: #6c757d;
+            border: none;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .form-control {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="fs-4 fw-bold">FC.</span>
+            </div>
+            <nav class="d-flex justify-content-center w-100">
+                <a href="#" class="text-white text-decoration-none me-3">Acerca de</a>
+                <a href="#" class="text-white text-decoration-none me-3">Consultas</a>
+                <a href="#" class="text-white text-decoration-none me-3">Servicios</a>
+                <a href="#" class="text-white text-decoration-none me-3">Historia</a>
+                <a href="#" class="text-white text-decoration-none">Contribuciones</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contenido container my-4">
+        <h2 class="text-uppercase fw-bold">Localizar</h2>
+
+        <div class="row mt-4">
+            <!-- Imagen de localización -->
+            <div class="col-lg-8">
+                <p class="text-muted mb-2">La última ubicación registrada</p>
+                <div class="border rounded-3 overflow-hidden">
+                    <img src="https://via.placeholder.com/800x400" alt="Map" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="d-flex align-items-center mb-3">
+                    <p class="mb-0">
+                        <strong>Ubicación:</strong><br>
+                        A108 Adam Street, New York, NY 535022
+                    </p>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <p class="mb-0">
+                        <strong>Llamar:</strong><br>
+                        +1 5589 55488 55
+                    </p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <p class="mb-0">
+                        <strong>Email:</strong><br>
+                        info@example.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="row mt-4">
+            <div class="col-lg-8 offset-lg-4">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Tu nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Tu email">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Dirigido a:">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-warning px-4">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white py-3">
+        <div class="row">
+            <div class="col-md-6 texto-pie">
+                <h5>GP</h5>
+                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Teléfono: +1 5589 55488 55</p>
+                <p>Correo electrónico: info@example.com</p>
+            </div>
+            
+            <div class="col-md-6 texto-pie">
+                <h5>Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-opacity-75">Inicio</a></li>
+                    <li><a href="#" class="text-white text-opacity-75">Sobre nosotros</a></li>
+                    <li><a href="#" class="text-white text-opacity-75">Servicios</a></li>
+                    <li><a href="#" class="text-white text-opacity-75">Términos del servicio</a></li>
+                    <li><a href="#" class="text-white text-opacity-75">Política de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-2 text-center">
+            <div class="col-12 texto-pie">
+                <p>© Copyright GP - Todos los derechos reservados</p>
+                <p>Diseñado por BootstrapMade</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
