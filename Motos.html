@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Mercado</title>
+    <title>Motos</title>
     <style>
         body,
         html {
@@ -17,9 +17,9 @@
 
         .contenido {
             flex: 1;
-            min-height: calc(100vh - 100px);
             background-color: #ffffff;
             padding-top: 50px;
+            padding-bottom: 30px;
         }
 
         footer {
@@ -81,6 +81,18 @@
             max-width: 100%;
             height: auto;
         }
+
+        .btn-eliminar {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .btn-eliminar:hover {
+            background-color: #c82333;
+        }
     </style>
 </head>
 
@@ -103,58 +115,41 @@
     </header>
 
     <main class="contenido container py-5">
-        <h1 class="text-center text-uppercase">Mercado</h1>
+        <h1 class="text-center text-uppercase">Motos</h1>
 
         <section class="container-products">
-            <div class="row mt-4">
-                <div class="col-md-3">
+            <div class="row mt-4" id="motos-container">
+                <div class="col-md-4 moto-item" id="moto-1">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 1">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Moto 1">
                         <div class="card-body">
-                            <h5 class="card-title" data-bs-toggle="modal" data-bs-target="#modalDetalleProducto" onclick="mostrarDetalle('Producto 1', 'https://via.placeholder.com/300x200', 'Detalles', '1500')">Producto 1</h5>
-                            <p class="card-text">Detalles.</p>
+                            <h5 class="card-title" data-bs-toggle="modal" data-bs-target="#modalDetalleMoto" onclick="mostrarDetalle('Moto 1', 'https://via.placeholder.com/300x200', 'Detalles de la Moto 1', '3000')">Moto 1</h5>
+                            <p class="card-text">Detalles o especificaciones.</p>
+                            <button class="btn btn-eliminar" onclick="eliminarMoto('moto-1')">Eliminar</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 2">
-                        <div class="card-body">
-                            <h5 class="card-title" data-bs-toggle="modal" data-bs-target="#modalDetalleProducto" onclick="mostrarDetalle('Producto 2', 'https://via.placeholder.com/300x200', 'Detalles', '1200')">Producto 2</h5>
-                            <p class="card-text">Detalles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Producto 3">
-                        <div class="card-body">
-                            <h5 class="card-title" data-bs-toggle="modal" data-bs-target="#modalDetalleProducto" onclick="mostrarDetalle('Producto 3', 'https://via.placeholder.com/300x200', 'Detalles', '1800')">Producto 3</h5>
-                            <p class="card-text">Detalles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
+
+                <div class="col-md-4">
                     <div class="card d-flex justify-content-center align-items-center" style="height: 300px;">
-                        <button class="btn btn-warning btn-agregar-producto" data-bs-toggle="modal" data-bs-target="#modalAgregarProducto">Agregar Producto</button>
+                        <button class="btn btn-warning btn-agregar-producto" data-bs-toggle="modal" data-bs-target="#modalAgregarMoto">Agregar Moto</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <div class="modal fade" id="modalDetalleProducto" tabindex="-1" aria-labelledby="modalDetalleProductoLabel" aria-hidden="true">
+    <div class="modal fade" id="modalDetalleMoto" tabindex="-1" aria-labelledby="modalDetalleMotoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalDetalleProductoLabel">Detalles del Producto</h5>
+                    <h5 class="modal-title" id="modalDetalleMotoLabel">Detalles de la Moto</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <img id="detalle-imagen" src="" alt="Imagen del producto">
+                    <img id="detalle-imagen" src="" alt="Imagen de la moto">
                     <h4 id="detalle-nombre"></h4>
                     <p id="detalle-descripcion"></p>
-                    <p><strong>Precio:</strong> $<span id="detalle-precio"></span></p>
                     <div class="d-flex justify-content-between">
                         <button class="btn btn-primary" onclick="contactarVendedor()">Contactar al Vendedor</button>
                         <button class="btn btn-success" onclick="comprar()">Comprar</button>
@@ -164,18 +159,18 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalAgregarProducto" tabindex="-1" aria-labelledby="modalAgregarProductoLabel" aria-hidden="true">
+    <div class="modal fade" id="modalAgregarMoto" tabindex="-1" aria-labelledby="modalAgregarMotoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalAgregarProductoLabel">Agregar Producto</h5>
+                    <h5 class="modal-title" id="modalAgregarMotoLabel">Agregar Moto</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
                             <label for="modelo" class="form-label">Modelo</label>
-                            <input type="text" class="form-control" id="modelo" placeholder="Ingresa el modelo del producto">
+                            <input type="text" class="form-control" id="modelo" placeholder="Ingresa el modelo de la moto">
                         </div>
                         <div class="mb-3">
                             <label for="cilindros" class="form-label">Cilindros</label>
@@ -189,11 +184,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="placas" class="form-label">Placas</label>
-                            <input type="text" class="form-control" id="placas" placeholder="Ingresa las placas del producto">
-                        </div>
-                        <div class="mb-3">
-                            <label for="precio" class="form-label">Precio</label>
-                            <input type="number" class="form-control" id="precio" placeholder="Ingresa el precio del producto">
+                            <input type="text" class="form-control" id="placas" placeholder="Número de placas">
                         </div>
                         <div class="mb-3">
                             <label for="imagen" class="form-label">Subir Imagen</label>
@@ -252,8 +243,14 @@
         function comprar() {
             alert('Compra realizada');
         }
-    </script>
 
+        function eliminarMoto(motoId) {
+            const moto = document.getElementById(motoId);
+            if (moto) {
+                moto.remove();
+            }
+        }
+    </script>
 </body>
 
 </html>
