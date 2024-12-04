@@ -76,31 +76,29 @@
 </head>
 <body>
 
-<header class="container-fluid py-2 bg-dark text-white">
-    <div class="contenedor-header">
-        <div class="col-auto">
-            <h2 class="mb-0">FC</h2>
+    <header class="bg-dark text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="fs-4 fw-bold">FC.</span>
+            </div>
+            <nav class="d-flex justify-content-center w-100">
+                <a href="index.html" class="text-white text-decoration-none me-3">Inicio</a>
+                <a href="acercaDe.html" class="text-white text-decoration-none me-3">Acerca de</a>
+                <a href="Servicios.html" class="text-white text-decoration-none me-3">Servicios</a>
+                <a href="Historia.html" class="text-white text-decoration-none me-3">Historia</a>
+            </nav>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuario
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Perfil.html">Perfil</a></li>
+                    <li><a class="dropdown-item" href="Motos.html">Motos</a></li>
+                    <li><a class="dropdown-item" href="inicioSecion.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="enlaces-header" id="enlaces-header">
-            <a href="#">Consultas</a>
-            <a href="#">Servicios</a>
-            <a href="#">Historia</a>
-            <a href="#">Contáctanos</a>
-            <a href="#">Acerca de</a>
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Usuario
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">Motos</a></li>
-                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-            </ul>
-        <div class="col-auto" id="perfil-o-login">
-        </div>
-    </div>
-</header>
+    </header>
 
 <div class="imagen-fondo">
     <div class="form-container">
@@ -136,24 +134,31 @@
     </div>
 </div>
 
-<footer class="footer">
+<footer class="bg-dark text-white text-center py-4 mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 footer-text">
-                <h5>GP</h5>
+            <div class="col-md-6">
+                <h5>FC. Mercado</h5>
                 <p>A108 Adam Street, New York, NY 535022</p>
-                <p>Phone: +1 5589 55488 55</p>
-                <p>Email: info@example.com</p>
+                <p>Teléfono: +1 5589 55488 55</p>
+                <p>Correo electrónico: info@example.com</p>
             </div>
-            <div class="col-md-6 texto-pie">
+
+            <div class="col-md-6">
                 <h5>Enlaces útiles</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Términos del servicio</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li><a href="Servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                    <li><a href="terminosServicio.html" class="text-white text-decoration-none">Términos del servicio</a></li>
+                    <li><a href="politicaPrivacidad.html" class="text-white text-decoration-none">Política de privacidad</a></li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-12">
+                <p>© Copyright FC. Mercado - Todos los derechos reservados</p>
+                <p>Diseñado por FC.</p>
             </div>
         </div>
     </div>

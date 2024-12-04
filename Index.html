@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title> FreeChain-Página-índice</title>
+    <title> FreeChain-Página-Inicio</title>
     <style>
         * {
             margin: 0;
@@ -15,6 +15,8 @@
             height: 100%;
             width: 100%;
             overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .enlaces-header a {
@@ -45,14 +47,14 @@
         }
 
         .contenido-principal {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
             color: white;
-            z-index: 1;
+            text-align: center;
         }
 
         .contenido-principal h1,
@@ -79,45 +81,22 @@
             text-decoration: underline;
         }
 
-        .enlaces-header {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .contenedor-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 10px 0;
-        }
-
-        .contenedor-header .col-auto {
-            margin-left: 15px;
-        }
-
-        .enlaces-header {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
         .imagen-fondo {
             background-image: url('motoclub1.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 60vh;
+            min-height: 100vh;
             position: relative;
             width: 100%;
-            height: 100%;
         }
-
 
         footer {
             width: 100%;
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            position: relative;
         }
 
         .circulo-perfil {
@@ -170,79 +149,75 @@
 </head>
 <body>
 
-    <header class="container-fluid py-2 bg-dark text-white">
-        <div class="contenedor-header">
-            <div class="col-auto">
-                <h2 class="mb-0">FC</h2>
+    <header class="bg-dark text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <span class="fs-4 fw-bold">FC.</span>
             </div>
-            <div class="enlaces-header" id="enlaces-header">
-                <a href="#">Consultas</a>
-                <a href="#">Servicios</a>
-                <a href="#">Historia</a>
-                <a href="#">Contáctanos</a>
-                <a href="#">Acerca de</a>
-            </div>
-  
-            <div class="col-auto" id="perfil-o-login">
+            <nav class="d-flex justify-content-center w-100">
+                <a href="index.html" class="text-white text-decoration-none me-3">Inicio</a>
+                <a href="acercaDe.html" class="text-white text-decoration-none me-3">Acerca de</a>
+                <a href="Servicios.html" class="text-white text-decoration-none me-3">Servicios</a>
+                <a href="Historia.html" class="text-white text-decoration-none me-3">Historia</a>
+            </nav>
+            <div class="d-flex">
+                <a href="registroUsuario.html" class="btn btn-warning text-white me-2">Registrar</a>
+                <a href="inicioSecion.html" class="btn btn-secondary text-white">Iniciar</a>
             </div>
         </div>
     </header>
 
     <div class="container-fluid imagen-fondo">
         <div class="contenido-principal">
-            <h1 class="display-4 fw-bold">Una comunidad más unida</h1>
-            <p class="lead">Una carretera más segura</p>
-
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mt-5">
                 <div class="col-md-3 mb-3">
-                    <div class="border border-white border-opacity-25 py-3">
-                        <a href="#" class="fw-bold text-white text-opacity-75">Moto Clubs</a>
+                    <div class="border border-white border-opacity-25 py-3 text-center">
+                        <a href="MotoClub.html" class="fw-bold text-white text-opacity-75">Moto Clubs</a>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <div class="border border-white border-opacity-25 py-3">
-                        <a href="#" class="fw-bold text-white text-opacity-75">Eventos</a>
+                    <div class="border border-white border-opacity-25 py-3 text-center">
+                        <a href="Eventos.html" class="fw-bold text-white text-opacity-75">Eventos</a>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <div class="border border-white border-opacity-25 py-3">
-                        <a href="#" class="fw-bold text-white text-opacity-75">Información</a>
+                    <div class="border border-white border-opacity-25 py-3 text-center">
+                        <a href="Informacion.html" class="fw-bold text-white text-opacity-75">Información</a>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <div class="border border-white border-opacity-25 py-3">
-                        <a href="#" class="fw-bold text-white text-opacity-75">Emergencias</a>
+                    <div class="border border-white border-opacity-25 py-3 text-center">
+                        <a href="Emergencias.html" class="fw-bold text-white text-opacity-75">Emergencias</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="container-fluid bg-dark text-white py-4">
-        <div class="row">
-            <div class="col-md-6 texto-pie">
-                <h5>GP</h5>
-                <p>A108 Adam Street, New York, NY 535022</p>
-                <p>Teléfono: +1 5589 55488 55</p>
-                <p>Correo electrónico: info@example.com</p>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>FC. Mercado</h5>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>Teléfono: +1 5589 55488 55</p>
+                    <p>Correo electrónico: info@example.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="Servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                        <li><a href="terminosServicio.html" class="text-white text-decoration-none">Términos del servicio</a></li>
+                        <li><a href="politicaPrivacidad.html" class="text-white text-decoration-none">Política de privacidad</a></li>
+                    </ul>
+                </div>
             </div>
-            
-            <div class="col-md-6 texto-pie">
-                <h5>Enlaces útiles</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white text-opacity-75">Inicio</a></li>
-                    <li><a href="#" class="text-white text-opacity-75">Sobre nosotros</a></li>
-                    <li><a href="#" class="text-white text-opacity-75">Servicios</a></li>
-                    <li><a href="#" class="text-white text-opacity-75">Términos del servicio</a></li>
-                    <li><a href="#" class="text-white text-opacity-75">Política de privacidad</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row mt-4 text-center">
-            <div class="col-12 texto-pie">
-                <p>© Copyright GP - Todos los derechos reservados</p>
-                <p>Diseñado por BootstrapMade</p>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <p>© Copyright FC. Mercado - Todos los derechos reservados</p>
+                    <p>Diseñado por FC.</p>
+                </div>
             </div>
         </div>
     </footer>
